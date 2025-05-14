@@ -27,7 +27,7 @@ jobs:
           pyinstaller --onefile --noconsole morse_decoder.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
         with:
           name: morse_decoder
           path: dist/morse_decoder.exe
